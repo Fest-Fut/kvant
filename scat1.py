@@ -4,6 +4,12 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 
+def findZero(fn,l=-1,r=1,b=-1,t=1,neps=1e-12,beps=1e-11):
+    """
+    Find zero of givenfunction in given widow
+    """
+    pass
+
 def ampD(E,a=1,u0=20):
     """
     Compute scate tering cumplitude
@@ -35,3 +41,10 @@ def spectre(E,a=1,u0=20):
     kap=np.emath.sqrt(-E)
     kp=np.emath.sqrt(E+u0) 
     return 2*np.cos(kp*a)+(kap/kp-kp/kap)*np.sin(kp*a)
+
+def psi(x):
+    """
+    plot wave function
+    """
+    pass
+
